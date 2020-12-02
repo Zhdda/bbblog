@@ -4,6 +4,114 @@
   
     
     <entry>
+      <title>YUV颜色空间之彩色电视制</title>
+      <link href="2020/12/02/YUV%E9%A2%9C%E8%89%B2%E7%A9%BA%E9%97%B4%E4%B9%8B%E5%BD%A9%E8%89%B2%E7%94%B5%E8%A7%86%E5%88%B6/"/>
+      <url>2020/12/02/YUV%E9%A2%9C%E8%89%B2%E7%A9%BA%E9%97%B4%E4%B9%8B%E5%BD%A9%E8%89%B2%E7%94%B5%E8%A7%86%E5%88%B6/</url>
+      
+        <content type="html"><![CDATA[<p>继续这篇文章之前，先确保上篇没有不懂的内容。上篇讲了彩色电视到数字电视的发展，进而更深层次的，讲了模拟电视信号，和数字电视信号。其实收音机的信号传输方式，也是这么个发展。</p><p>但是光知道模拟信号和数字信号，依然不够，因为它只是电视传输图像数据，使用的方式。而具体到更细节的东西，比如图像的扫描参数、电视信号的带宽，以及射频特性，就需要制定一套标准，来进行统一。而这就是这篇要讲的，电视制。</p><h5 id="1-电视制是啥？"><a href="#1-电视制是啥？" class="headerlink" title="1. 电视制是啥？"></a>1. 电视制是啥？</h5><p>简单来说，它就是传输图像和声音的方法。像前面说的，电视制按扫描参数、电视信号带宽和射频特性，来划分。就比如说，扫描参数包括了扫描方式（在显示器里说的，隔行扫描或逐行扫描）、扫描行频（一秒扫描多少行）、帧频（一秒扫多少帧），再加上信号带宽，声音的载波频率（不用管），信号的调制方法（不用管），还有比较重要的，使用的颜色空间，等等这些，就构成了电视制。</p><p>看到电视制包含了这么多参数，就知道世界上的电视制也不只一种。就黑白电视来讲，世界上在用和不在用的，就有大约14种。而值得庆幸的是，彩色电视制，在黑白电视制基础上，按其在处理三种基色信号的不同方式，进一步进行了划分。目前世界上，主要使用的彩色电视制有三种。</p><h5 id="2-彩色电视制"><a href="#2-彩色电视制" class="headerlink" title="2. 彩色电视制"></a>2. 彩色电视制</h5><p>黑白电视制就不说了，直接来到彩色电视制。世界上现行的模拟彩色电视制主要有三种，分别为：NTSC、PAL、和SECAM，它们互不兼容。</p><h5 id="2-1-NTSC"><a href="#2-1-NTSC" class="headerlink" title="2.1 NTSC"></a>2.1 NTSC</h5><p>NTSC制是比较早制定的彩色电视广播标准，在美国、加拿大等大部分西半球国家，以及日本、韩国、菲律宾和台湾地区采用这种制式。</p><p>它的主要特性是，使用的YIQ信号，也就是YIQ颜色空间，并不是YUV，色度信号使用正交幅度调制（QAM，知道就好）。</p><p>它的扫描参数会在下面列在表格里，下同。</p><h5 id="2-2-PAL"><a href="#2-2-PAL" class="headerlink" title="2.2 PAL"></a>2.2 PAL</h5><p>PAL彩色电视制是在NTSC之后，开播的彩色电视广播标准。PAL制称为逐行倒相（Phase-Alternative Line， PAL）彩色电视制，使用的也是正交幅度调制。它是为了克服NTSC制存在的相位敏感，而造成的彩色失真而开发的。恩，知道就好。</p><p>它的使用范围为：德国、英国等一些西欧国家，以及中国、朝鲜等国家采用这种制式。而在这种制式下，更细节的一些参数也不太相同，因此PAL制有PAL-G，PAL-I，PAL-D等制式，我国大陆（注意是大陆，不包括台湾）使用的是PAL-D。</p><p>它使用的颜色空间是YUV。</p><h5 id="2-3-SECAM制"><a href="#2-3-SECAM制" class="headerlink" title="2.3 SECAM制"></a>2.3 SECAM制</h5><p>SECAM制不同于NTSC和PAL，它由法国提出并制定，SECAM是法文的缩写。它广泛应用在法国、俄罗斯、东欧、中东等约60多个地区和国家。</p><p>和NTSC和PAL不同的是，它的色度信号，使用的不是正交幅度调制，而是频率调制（FM）。它使用的颜色空间也是一种新的颜色空间，和YUV类似。</p><h5 id="3-电视制的兼容性"><a href="#3-电视制的兼容性" class="headerlink" title="3. 电视制的兼容性"></a>3. 电视制的兼容性</h5><p>NTSC、PAL、SECAM互不兼容，意思就是，PAL制的电视机不能观看NTSC和SECAM制的电视节目，同理NTSC和SECAM也一样。</p><p>虽然它们之间互不兼容，但是它们却都是彩色和黑白兼容的制式。意思是：</p><p>一：黑白电视机能够接收彩色电视广播，显示的是黑白图像。</p><p>二：彩色电视机能够接收黑白电视广播，显示的也是黑白图像。</p><p>而为了实现这种兼容性，对彩色电视系统有两点要求：</p><p>一：必须采用和黑白电视相同的一些基本参数，比如扫描方式、行频、帧频、图像载波、声音载频等。</p><p>二：需要将摄像机采集图像，输出的三基色RGB信号，转换成一个亮度信号，以及代表色度的两个色差信号（NTSC、PAL、SECAM使用的颜色空间都是如此，如YIQ、YUV，Y为亮度，IQ和UV分别为色差，等之后介绍YUV的时候会进一步明白），并将它们组合成一个彩色全电视信号进行传送。</p><p>然后在接收端的时候，彩色电视机将彩色全电视信号，重新转换成三个基色信号，在显示器上重现发送端的彩色图像。</p><p>流程图如下：</p><p><img src="https://upload-images.jianshu.io/upload_images/4272749-8c758dbfd5f845d8?imageMogr2/auto-orient/strip%7CimageView2/2/w/1182" alt="img"></p><p>电视显示系统</p><p>图中Y表示亮度信号，C1和C2表示两个色差信号，在实际应用中，C1、C2与具体的应用有关。比如如果图中电视机为NTSC彩色电视机，则C1和C2分别表示I、Q两个色差信号，如果是PAL彩色电视机，则C1、C2分别表示U和V。而在后面要讲的ITU-R BT.601里，C1和C2分别表示Cr、Cb两个色差信号。</p><p>这里说的色差，就是三基色（即R、G、B）与亮度（Y）的差。</p><h5 id="4-国际彩色电视标准"><a href="#4-国际彩色电视标准" class="headerlink" title="4. 国际彩色电视标准"></a>4. 国际彩色电视标准</h5><p>因为电视制不少，国际电信联盟（ITU，记住这个词，后面还会用），给每一种黑白电视制分配了A~N的字母标识，这样黑白电视制的字母与NTSC、PAL和SECAM彩色电视制结合，就制定了世界上所有的电视制。如我国大陆的PAL-D，美国的NTSC-M。如下表（连带各制式的扫描参数）：</p><p><img src="https://upload-images.jianshu.io/upload_images/4272749-6724ad67769c4344?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200" alt="img"></p><p>国际彩色电视标准</p><p>表中的场频很好理解，前面说过电视机的扫描方式分为：隔行扫描和逐行扫描。如果是隔行扫描的情况下，电子束从第一行开始扫，接着是3、5、7…这样扫完奇数行后，扫偶数行，相当于一帧图像，分成两场扫。第一场扫描总行数的一半，第二场扫描另一半，因而括号内场频是帧频的二倍。</p><p>作者：金架构<br>链接：<a href="https://www.jianshu.com/p/599a61989b4a">https://www.jianshu.com/p/599a61989b4a</a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 音视频基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> h264 </tag>
+            
+            <tag> 转载 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CIE颜色空间四之从CIExyY到CIEYUV</title>
+      <link href="2020/12/02/CIE%E9%A2%9C%E8%89%B2%E7%A9%BA%E9%97%B4%E5%9B%9B%E4%B9%8B%E4%BB%8ECIExyY%E5%88%B0CIEYUV/"/>
+      <url>2020/12/02/CIE%E9%A2%9C%E8%89%B2%E7%A9%BA%E9%97%B4%E5%9B%9B%E4%B9%8B%E4%BB%8ECIExyY%E5%88%B0CIEYUV/</url>
+      
+        <content type="html"><![CDATA[<p>接着上篇的CIE xyY颜色空间继续，上篇中我们分析了下xyY中的xyY三个值是怎么来的，并且引进了它的二维色度图。那么接下来，我们就对它的色度图，分析一下</p><p>上篇中我们说过，色度是色调和饱和度的统称，所以xyY的色度图，并没有展现亮度Y，因而它只有xy两个坐标轴</p><h5 id="1-CIE-xyY色度图中看色调和饱和度"><a href="#1-CIE-xyY色度图中看色调和饱和度" class="headerlink" title="1. CIE xyY色度图中看色调和饱和度"></a>1. CIE xyY色度图中看色调和饱和度</h5><p>直观的来看，如下图：</p><p><img src="https://upload-images.jianshu.io/upload_images/4272749-9dd43feb8ec2ca8b.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/674" alt="img"></p><p>CIE xyY色度图</p><h5 id="1-1-饱和度"><a href="#1-1-饱和度" class="headerlink" title="1.1 饱和度"></a>1.1 饱和度</h5><p>图中W点为白光E的坐标，饱和度为0，谱色轨迹上饱和度为100%。在图中对饱和度相同的各点，进行连线，形成一圈一圈的舌形线，称为等饱和度线。</p><h5 id="1-2-色调"><a href="#1-2-色调" class="headerlink" title="1.2 色调"></a>1.2 色调</h5><p>W点向谱色轨迹上各点连线，形成的发散线段，叫做等色调波长线。线段上任何一点的波长，与谱色轨迹上的单色波长相同。比如图中M点的波长为540nm，那么WM线上个彩色点的波长都为540nm。</p><p>这两句应该比较好理解，那么通过控制变量，在等色调波长线上，看饱和度是个什么情况呢？</p><p>比如图中的WM线，在M点饱和度为100%，越靠近W点，饱和度越低，也就是渗入的白光越高，到了W点，则完全成为白光。如果这样理解比较费力，可以反向理解，从W点到M点，掺入的单色光越来越多，到M点达到饱和。</p><p>分析一下就可以看出，在xyY色度图上颜色呈现很清晰。</p><h5 id="1-3-色度图上看色域"><a href="#1-3-色度图上看色域" class="headerlink" title="1. 3 色度图上看色域"></a>1. 3 色度图上看色域</h5><h5 id="色域是啥？"><a href="#色域是啥？" class="headerlink" title="色域是啥？"></a>色域是啥？</h5><p>(1)在图中，就是一个闭合曲线所包围的区域。</p><p>(2)在显示设备上，它表示了显示设备可以显示的所有颜色的集合。</p><p>我们先分析(1)，在xyY色度图上，谱色轨迹所包围的区域，就是这个颜色空间所能呈现的色域。通常我们会对这个色域进行划分，这样就比较好判断，某种颜色在坐标系上的范围。如下图：</p><p><img src="https://upload-images.jianshu.io/upload_images/4272749-502076b614a84dbe.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/758" alt="img"></p><p>xyY颜色空间色域图</p><p>再来看二，这个比较重要，来分析这个之前先来看个问题，为什么显示设备不能显示xyY的整块色域呢？</p><p>原因很简单，因为三基色不同。我们首先要明白，图中xyY形成的整块色域，使用的是CIE规定的标准三基色，分别为700nm(R)，546.1nm(G)，435.8nm(B)，可以对照上图找下，分别为色度图的三角。</p><p>而在显示设备上，我们是使用红、蓝、绿三种荧光粉，发出的非标准谱色光，作为显像的三基色。所以我们的显示设备，能显示的色域只占图中的一部分。</p><p>就拿彩色电视来说，他们能重现的颜色的最大范围如下图：</p><p><img src="https://upload-images.jianshu.io/upload_images/4272749-767209b99c887582.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/762" alt="img"></p><p>NTSC和PAL电视重现的颜色范围</p><p>细心点可以看到，NTSC和PAL电视显示的色域也不同（NTSC和PAL为电视制式，后面会讲）。那是因为彩色电视的制式不一样，他们采用的三基色荧光粉也不一样。</p><p><img src="https://upload-images.jianshu.io/upload_images/4272749-d546a285671ced27.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200" alt="img"></p><p>这张图是NTSC和PAL电视，显像三基色的色度坐标，可以看到他们使用的三基色坐标并不一致。</p><p>而打印机、电影、电视，他们能重现的色域，差别就更大了。</p><p><img src="https://upload-images.jianshu.io/upload_images/4272749-c762d58fc81a946f.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/790" alt="img"></p><p>几种设备重现的彩色范围</p><p>图中可以看出，因为电影需要比较生动，细腻的画质，所以它能呈现的彩色范围更大。</p><p>通过以上就可以知道，CIE xyY在色度图上的表现很直观，并且做研究很标准、很方便，但是它依然有缺点</p><h5 id="2-CIE-xyY色度图的缺点"><a href="#2-CIE-xyY色度图的缺点" class="headerlink" title="2. CIE xyY色度图的缺点"></a>2. CIE xyY色度图的缺点</h5><p>我们通过上面几张图，似乎并没有看到缺点。不过有个缺点是我们上篇就说过的，它没有显示亮度。不过这个也无关紧要，重要的是另一个缺点。请看下图：</p><p><img src="https://upload-images.jianshu.io/upload_images/4272749-edd6d4cf025500ca.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/712" alt="img"></p><p>这张图代表了CIE xyY色度图的感知均匀性，什么意思呢？我们都知道，人眼对颜色的感知并不是线性的，比如之前说的，人眼感觉绿色就比红和蓝要亮。</p><p>而图中的线段，就代表了人眼对相邻色的鉴别能力。图中每条线段，表示一对颜色，在人眼看来，它们是相同的颜色。在图中可以看出，各个线段的长短并不一致，这就是感知不均匀。线段短的，说明人眼对这片区域的颜色变化更敏感。</p><p>这个缺点看起来对普通人无关紧要，但是对科学家就要命啦，所以他们在CIE xyY的基础上，又做了一层转换。</p><h5 id="3-CIE-YUV颜色空间"><a href="#3-CIE-YUV颜色空间" class="headerlink" title="3. CIE YUV颜色空间"></a>3. CIE YUV颜色空间</h5><p>如上所说，这种颜色空间是在xyY的基础上，经过了一层线性变换得来的。在色度图上，两个点之间的色差与我们对颜色的感知是均匀的。</p><p>而YUV里面的Y，还和XYZ或者xyY中的Y一样，而U和V定义如下：</p><p><img src="https://upload-images.jianshu.io/upload_images/4272749-2e1332bc18aa82d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/740" alt="img"></p><p>然后这帮人，为了进一步减小色差与感知的非线性，又开发了CIE YU’V’颜色空间，注意是带撇的。</p><h5 id="4-CIE-YU’V’"><a href="#4-CIE-YU’V’" class="headerlink" title="4. CIE YU’V’"></a>4. CIE YU’V’</h5><p>其中的Y依然不变，u’和v’定义如下图</p><p><img src="https://upload-images.jianshu.io/upload_images/4272749-a011a63fb2008c6c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1010" alt="img"></p><h5 id="5-CIE颜色空间总结（重要）"><a href="#5-CIE颜色空间总结（重要）" class="headerlink" title="5. CIE颜色空间总结（重要）"></a>5. CIE颜色空间总结（重要）</h5><p>至此，CIE的XYZ、xyY、YUV、YU’V’等颜色空间介绍完毕，还有CIE LUV和CIE LAB打算不讲啦，理由是啥？</p><h5 id="理由："><a href="#理由：" class="headerlink" title="理由："></a>理由：</h5><p>因为这个系列的最终目标，是视频编码和图像处理，而在视频编码里我们使用的YUV，并不是CIE YUV，注意我们常说的<strong>YUV和CIE YUV并不是一回事</strong>，下篇会讲他们为啥不是一回事。</p><p>那为什么又要讲CIE这几个颜色空间呢？因为如果要成为一名专业的音视频开发人员，这些知识必不可少。并且，最重要的，还是在了解这几个颜色空间时，所采取的思路，和分析的方法。</p><p>而且在了解了这几个颜色空间之后，后面的YUV、YCbCr也就很好理解啦。因为从命名上就可以看出，它们差别不大，如果你认真看了这几篇，可以说是小菜一碟，哈哈~</p><p>作者：金架构<br>链接：<a href="https://www.jianshu.com/p/9aafa10a6138">https://www.jianshu.com/p/9aafa10a6138</a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 音视频基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> h264 </tag>
+            
+            <tag> 转载 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CIE颜色空间三之从CIEXYZ到CIExyY</title>
+      <link href="2020/12/02/CIE%E9%A2%9C%E8%89%B2%E7%A9%BA%E9%97%B4%E4%B8%89%E4%B9%8B%E4%BB%8ECIEXYZ%E5%88%B0CIExyY/"/>
+      <url>2020/12/02/CIE%E9%A2%9C%E8%89%B2%E7%A9%BA%E9%97%B4%E4%B8%89%E4%B9%8B%E4%BB%8ECIEXYZ%E5%88%B0CIExyY/</url>
+      
+        <content type="html"><![CDATA[<p>在上篇文章中，我们曾大致了解了一下CIE XYZ颜色空间。知道X、Y、Z是R、G、B的线性变换的结果，并知道Y不仅仅包含绿色，并且由于人眼感受绿色，要比红色和蓝色要亮，因此定义Y为亮度。</p><p>发完文章后我仔细看了一下，发现有几个会引起误区的地方。</p><h5 id="1-X、Y、Z和R、G、B的关系"><a href="#1-X、Y、Z和R、G、B的关系" class="headerlink" title="1. X、Y、Z和R、G、B的关系"></a>1. X、Y、Z和R、G、B的关系</h5><p>如果你看完上篇文章，认为X就是R（红）、Y就是G（绿）、Z就是B（红），那是因为，我没有把RGB转换成XYZ的公式进行拆分。有些读者在学校的时候，并没学过线性代数，这也包括我，不过我曾经自学过一段线性代数，所以为了能更清晰的分析CIE XYZ颜色空间，我们还是对下面这个公式分析一下。</p><p>其实这是一个简单的矩阵相乘，只要将等式右侧，第一个矩阵的每行，乘以第二个矩阵的列即可</p><p>原公式：</p><p><img src="https://upload-images.jianshu.io/upload_images/4272749-403ef1510c490aae.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/550" alt="img"></p><p>RGB转换为XYZ的公式</p><p>变换后：</p><p><img src="https://upload-images.jianshu.io/upload_images/4272749-b806a814cfb9c548.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/549" alt="img"></p><p>这样就可以看到，X、Y、Z其实分别是R、G、B三者的组合，只不过X值将近一半是由R组成，而Y值则多半由G组成，即百分之八十都是绿色，而Z百分之九十九都是蓝色。所以上篇文章分析的把Y定位亮度，并不是Y值就是绿色，而是它包含的绿色信息最多。</p><p>现在应该对XYZ颜色空间比较清楚了吧，不过说到这，还有一个重点没有介绍，就是XYZ颜色空间在坐标系上的表现。因为制定这个颜色空间，一是为了统一颜色表示，二是它方便进行数学计算。</p><p><img src="https://upload-images.jianshu.io/upload_images/4272749-bd06685aef333e6c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/481" alt="img"></p><p>CIE XYZ颜色空间</p><p>这张图表示了从400nm（紫色）到700nm（红色）之间的XYZ三基色刺激值，这是一个曲面向原点连线，形成的锥体，而且所有的XYZ刺激值，都落在这个正XYZ象限的椎体内。</p><p>这里坐标轴原点，相当于没有光照的黑色，而曲线边界代表纯光谱色的三基色刺激值，所以这个边界也称为光谱轨迹。光谱轨迹上的波长是单一的，所以在光谱轨迹上的颜色，代表了该颜色能达到的最大饱和度。</p><h5 id="2-XYZ的配色方程"><a href="#2-XYZ的配色方程" class="headerlink" title="2. XYZ的配色方程"></a>2. XYZ的配色方程</h5><p>在XYZ中，任何一种颜色，都可以用下面这个公式表示：</p><p>C=X<strong>X</strong>+Y<strong>Y</strong>+Z<strong>Z</strong></p><p>在这里，C代表颜色，加粗的X、Y、Z为三个基色单位，而<strong>X</strong>、<strong>Y</strong>、<strong>Z</strong>均为正的基色系数。当X=Y=Z时，合成白光。</p><p>说这个是因为，我们需要知道，合成的颜色的色调和饱和度，是由X、Y、Z的比值确定，这对理解接下来的xyY颜色空间很有帮助。</p><h5 id="3-从XYZ到xyY颜色空间"><a href="#3-从XYZ到xyY颜色空间" class="headerlink" title="3. 从XYZ到xyY颜色空间"></a>3. 从XYZ到xyY颜色空间</h5><p>从上面我们可以看到，XYZ的使用也并不简单，而且在坐标系上，它是一个锥体，也不直观。它虽然把Y定位亮度，但是在上图中并不好展现。所以后来CIE基于XYZ，又做了一层转换。</p><h5 id="3-1-xyY的xy是怎么来的"><a href="#3-1-xyY的xy是怎么来的" class="headerlink" title="3.1 xyY的xy是怎么来的"></a>3.1 xyY的xy是怎么来的</h5><p>直接点来说，它们的关系就是下面这个公式：</p><p><img src="https://upload-images.jianshu.io/upload_images/4272749-7887da4dbf72cef0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/441" alt="img"></p><p>XYZ转换为xyY</p><p>这里的小写xyz称为<strong>三基色相对系数</strong></p><p>这个公式要怎么理解呢？上面说了，在XYZ颜色空间里，当XYZ的比值不变时，合成颜色的色调和饱和度不变，也就是色度（色度是色调和饱和度的统称）不变。所以我们可以基于这个，将亮度和色度从概念上分开。既然亮度在坐标系上不太好展现，那我们就不展现。而且在管理颜色的时候，我们最关心的还是色度。</p><p>所以我们可以将X、Y、Z分别比上（X+Y+Z），只考虑它们的相对比例。这样色度将能更直观的描述，而且我们可以规定</p><p>作者：金架构<br>链接：<a href="https://www.jianshu.com/p/854ca5f13ce6">https://www.jianshu.com/p/854ca5f13ce6</a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 音视频基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> h264 </tag>
+            
+            <tag> 转载 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>cie颜色空间二之cie XYZ及Y的含义</title>
+      <link href="2020/12/02/XYZ%E5%8F%8AY%E7%9A%84%E5%90%AB%E4%B9%89/"/>
+      <url>2020/12/02/XYZ%E5%8F%8AY%E7%9A%84%E5%90%AB%E4%B9%89/</url>
+      
+        <content type="html"><![CDATA[<p>在上篇文章中，我想应该比较清楚的解释了，什么是<strong>色调</strong>、<strong>饱和度</strong>、<strong>明度</strong>（如果还没理解，请再看一遍哈~）。并且在结尾的时候，引入了HSB颜色空间，并在设备相关和设备无关的基础上，分析了一下它和之前一直在说的，也是生活中比较熟悉的，RGB颜色空间的区别。</p><p>那么接下来呢，就开始介绍几个比较重要的颜色空间。比如：<strong>CIE XYZ</strong>、<strong>CIE xyY</strong>、<strong>CIE YUV</strong>、<strong>CIE LUV</strong>、<strong>CIE LAB</strong>， 光看名字就知道，这些颜色空间都是CIE制定的。而且按这个顺序排列，是因为它们之间的递进或者因果关系，就是这样。从XYZ的产生，到YUV，以及后面的LUV、LAB，这是一条线下来的，现在不清楚没关系，接下来，我会理清它们之间的关系，并方便读者形成知识网。</p><p>那之所以引入这几个颜色空间，或者说它们的重要性是啥呢？是因为它们已经是目前成型，并且广泛使用的颜色空间。比如YUV，做视频编码的应该都比较熟悉，它广泛的应用在电视系统、视频编码领域，这也是这个系列，后面要逐步涉猎的内容。</p><h5 id="1-颜色度量方法的发展"><a href="#1-颜色度量方法的发展" class="headerlink" title="1. 颜色度量方法的发展"></a>1. 颜色度量方法的发展</h5><p>为了要清楚的了解这些颜色空间，以及颜色度量方法的来龙去脉，我们还是从源头说起。</p><p>还记得在<a href="https://www.jianshu.com/p/e5e2c013ba02">图像（一）</a>中，我们讲过RGB相加混色和CMY相减混色嘛？CMY不敢说，RGB应该是人人都比较熟悉的颜色空间，通俗点说是常识。那么这个简单的常识，又是怎么来的呢？</p><p>最早的时候，牛顿就开始研究颜色，没错，他不仅提出了牛顿三大定律，并且还著有《光学》一书。在实验的时候，他认识到了每一种颜色，和它相邻颜色之间的关系，比如把红色和紫色首尾相连，就形成了一个色圆，也称牛顿色圆。</p><p><img src="https://upload-images.jianshu.io/upload_images/4272749-2b1d78c5614413bf.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/256" alt="img"></p><p>牛顿色圆</p><p>这就是最早的度量颜色的方法。它的圆周表示色调，半径表示饱和度。这为RGB相加混色奠定了基础。</p><p>后来有人提出，人的眼睛有红绿蓝三种基色的接收器，并且经过实验，证实RGB可以产生几乎所有的颜色。至此，颜色的物理学基础打造完毕，而它的度量体系开始慢慢建立。</p><p><img src="https://upload-images.jianshu.io/upload_images/4272749-9202897ff0d677a1.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/452" alt="img"></p><p>颜色的度量方法</p><p>现在度量方法的建立中，从颜色到牛顿色圆，应该比较清楚了。图中下面的三个颜色体系，或者说颜色系统，不用多说，中间的CIE制是重点。而Munsell制和Ostwald制，不知道也没关系。只需要知道Munsell制，是其他颜色系统的基础。为什么这么说，因为CIE制定的色调、明度、饱和度，就是在Munsell制的基础上建立的，有兴趣的朋友可以翻阅资料看下。</p><p>好啦，现在开始重点介绍CIE颜色系统，也就是文章开头说的那一系列颜色空间。</p><h5 id="2-从RGB到CIE-XYZ颜色空间"><a href="#2-从RGB到CIE-XYZ颜色空间" class="headerlink" title="2. 从RGB到CIE XYZ颜色空间"></a>2. 从RGB到CIE XYZ颜色空间</h5><p>看过上文都知道，RGB是一种设备相关的颜色空间，每一种设备使用RGB模型时，都有不太相同的定义，比如在显示器和打印机上，就不太一样，因此在使用RGB模型时，这些设备之间关于RGB的定义，并不能通用。</p><p>而且还有一点，就是我们在比较两种颜色时，经常会忽略光照的因素，如果比较两种颜色所处的光照环境不一致，那将毫无意义。</p><p>因此，在这两点的基础上，CIE制定了两条标准。</p><p>（1）定义了XYZ颜色空间，这是一种与RGB相关的想象基色系统，更适用于颜色计算。</p><p>（2）定义了标准光源</p><p>我想第二条应该简单明了。那么第一条又是如何来的呢？或者说，为什么要制定XYZ这样的一套颜色空间。</p><h5 id="2-1-为什么要制定XYZ"><a href="#2-1-为什么要制定XYZ" class="headerlink" title="2.1 为什么要制定XYZ"></a>2.1 为什么要制定XYZ</h5><p>要理解这个，得先看一张图。</p><p><img src="https://upload-images.jianshu.io/upload_images/4272749-2d18bb5f48243f3c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/346" alt="img"></p><p>CIE RGB颜色匹配曲线</p><p>这张图，是CIE拉了一帮实验者，做出的实验结果，这是一个RGB颜色匹配函数。图中的横坐标，表示光谱波长，纵坐标表示用来匹配光谱各色所需要的r、g、b值，这些值是以等能量白光为标准的系数，是观察者们实验结果的平均值。</p><p>可以看到，图中的红线，也就是r值，在438.1nm和546.1nm之间出现了负值。恩，出现负值是啥意思呢，总不至于在这一段，需要减去对应数值的红光吧？！谁都知道，合成颜色不能减去红光，但是我们却可以使用相减混色模型，也就是添加红色的补色。</p><p>可以看出，这是弊端之一，在做数学计算的时候，我们肯定是希望，坐标轴上的值尽量都为正数，对吧？！</p><p>而且还有一点，RGB里面，并没有亮度，因此如果要新制定一个颜色空间，也要加上亮度，才能做成设备无关，并且通用。</p><p>这就是制定XYZ的原因。</p><h5 id="2-2-XYZ中的X、Y、Z都代表了什么"><a href="#2-2-XYZ中的X、Y、Z都代表了什么" class="headerlink" title="2.2 XYZ中的X、Y、Z都代表了什么"></a>2.2 XYZ中的X、Y、Z都代表了什么</h5><p>简单来说，X、Y、Z是对R、G、B的一种线性变换，XYZ也分别代表了RGB三基色刺激值的概念。如果这么说还不够直接，那么还有公式</p><p><img src="https://upload-images.jianshu.io/upload_images/4272749-403ef1510c490aae.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/550" alt="img"></p><p>RGB转换为XYZ的公式</p><p>现在明白了吧，XYZ是对RGB做了一层线性变换，变换后的颜色空间，使用X、Y、Z为三基色，并且三个值都用正数去匹配所有颜色。同样，每种颜色都可以表示成X、Y、Z的混合。如下图：</p><p><img src="https://upload-images.jianshu.io/upload_images/4272749-991482116b767c45.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/609" alt="img"></p><p>CIE XYZ颜色匹配函数</p><p>不过变换后的颜色空间，是一种与设备无关的颜色空间。大家肯定都意外，咦~我搞个系数乘一下，就变成设备无关啦。并不是这么简单，因为XYZ中的Y值，并不仅仅只包含绿色信息这么简单。</p><h5 id="2-3-Y值的含义"><a href="#2-3-Y值的含义" class="headerlink" title="2.3 Y值的含义"></a>2.3 Y值的含义</h5><p>此处Y值的含义非常重要，这也是接下来理解其他颜色空间的关键。</p><p>在维基百科中有这么一段（搜关键词CIE 1931 color space就可以看到，注意看英文版，中文翻译的不全），说人眼在相同光照强度的条件下，感受绿色的光谱，要比红色或者蓝色的要亮。</p><p><img src="https://upload-images.jianshu.io/upload_images/4272749-dd3df45d7f447dde.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/531" alt="img"></p><p>意思是啥呢？为了更明白，我们重新对照一下下面这张图看下</p><p><img src="https://upload-images.jianshu.io/upload_images/4272749-2d18bb5f48243f3c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/346" alt="img"></p><p>可以看到，图中绿色刺激值，几乎横跨光谱横坐标。而且蓝色在左边，红色在右边，对照横坐标这意味着什么？说明<strong>绿色是中波，蓝色是短波，红色是长波</strong>，而我们都知道比短波短，或者比长波长的电磁波，我们就看不见啦！所以抛出人眼的特性，这点也侧面说明人眼对绿色更为敏感。</p><h5 id="所以XYZ中的Y代表了什么呢？"><a href="#所以XYZ中的Y代表了什么呢？" class="headerlink" title="所以XYZ中的Y代表了什么呢？"></a>所以XYZ中的Y代表了什么呢？</h5><p>可以看英文解释划横线那句，CIE基于这一事实，<strong>定义Y为亮度</strong>（不说明度是因为明度代表主观感受，而亮度代表物理实际测量的光强，所以通常在颜色空间中使用亮度一词）。所以我们在看资料，或者书籍的时候，都会看到Y为亮度，就是这么来的，但是也别忘了，它在CIE的颜色空间中也包含了绿色信息。</p><p>作者：金架构<br>链接：<a href="https://www.jianshu.com/p/2f222564c3ec">https://www.jianshu.com/p/2f222564c3ec</a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 音视频基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> h264 </tag>
+            
+            <tag> 转载 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CIE颜色空间一之色调、明度和饱和度</title>
       <link href="2020/12/02/CIE%E9%A2%9C%E8%89%B2%E7%A9%BA%E9%97%B4%E4%B8%80%E4%B9%8B%E8%89%B2%E8%B0%83%E3%80%81%E6%98%8E%E5%BA%A6%E5%92%8C%E9%A5%B1%E5%92%8C%E5%BA%A6/"/>
       <url>2020/12/02/CIE%E9%A2%9C%E8%89%B2%E7%A9%BA%E9%97%B4%E4%B8%80%E4%B9%8B%E8%89%B2%E8%B0%83%E3%80%81%E6%98%8E%E5%BA%A6%E5%92%8C%E9%A5%B1%E5%92%8C%E5%BA%A6/</url>
