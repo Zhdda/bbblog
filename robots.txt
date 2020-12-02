@@ -1,0 +1,8 @@
+ser-agent: * Allow: /
+Allow: /archives/
+Disallow: /vendors/
+Disallow: /categories/
+
+
+Sitemap: https://zhdada.com/sitemap.xml
+Sitemap: https://zhdada.com/baidusitemap.xml
